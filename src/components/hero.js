@@ -71,16 +71,16 @@ export default function Header() {
     <Hero>
       <span style={{ marginBottom: '1rem' }}>
         A{' '}
-        <a href="https://uniswap.org/" className="uniswap">
-          Uniswap
+        <a href="https://swene.io/" className="swene">
+          Swene
         </a>{' '}
         Project
       </span>
 
-      <p className="title">An Ethereum token list standard.</p>
+      <p className="title">A Binance Smart Chain token list standard.</p>
 
       <p style={{ fontSize: '20px', lineHeight: '150%' }} className="description" id="why-lists">
-        Token Lists is a community-led initiative to improve discoverability, reputation and trust in ERC20 token lists
+        Token Lists is a community-led initiative to improve discoverability, reputation and trust in BEP20 token lists
         in a manner that is inclusive, transparent, and decentralized.
       </p>
       <HoverLink target="_blank" rel="noopener noreferrer" href="https://uniswap.org/blog/token-lists/">
@@ -89,12 +89,9 @@ export default function Header() {
       <HoverLink
         target="_blank"
         rel="noopener noreferrer"
-        href="https://github.com/Uniswap/token-lists#authoring-token-lists"
+        href="https://github.com/swene/token-lists#authoring-token-lists"
       >
         {'->'} Make your own
-      </HoverLink>
-      <HoverLink target="_blank" rel="noopener noreferrer" href="http://community.tokenlists.org/">
-        {'->'} Community
       </HoverLink>
     </Hero>
   )
