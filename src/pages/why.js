@@ -14,7 +14,7 @@ function Home() {
       <div className="home-content">
         <div>
           <section className="hero">
-            <small style={{ marginTop: '4rem', marginBottom: '1rem' }}>A Uniswap project</small>
+            <small style={{ marginTop: '4rem', marginBottom: '1rem' }}>Maintained by Swene</small>
             <p className="title">Why tokens lists?</p>
 
             <p className="description" id="why-lists">
