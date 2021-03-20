@@ -39,9 +39,9 @@ function Home() {
               and reputation, as well as perform actions of moderation. How can users tell credible projects from scams?
             </p>
             <p>
-              Uniswap is a token marketplace that faces the issues of token reputation directly. Until now, the Uniswap
-              team took on the responsibility of curating the tokens that show up in the Uniswap Interface. While this
-              was important to get the project off the ground and protect the users of Uniswap, having the Uniswap team
+              Swene is a token marketplace that faces the issues of token reputation directly. Until now, the Swene
+              team took on the responsibility of curating the tokens that show up in the Swene Interface. While this
+              was important to get the project off the ground and protect the users of Swene, having the Swene team
               curate tokens that show up in the interface was never considered a viable long-term strategy.
             </p>
             <p>
@@ -63,7 +63,7 @@ function Home() {
             <p>
               Token Lists is a new json schema standard that enables exactly this. Projects can encode lists of
               reputable tokens in a machine readable way. Anyone can make a list. These lists can then be imported into
-              the Uniswap interface.
+              the Swene interface.
             </p>
             <p>
               We imagine Token Lists being an important building block for the Binance Smart Chain ecosystem to self-govern
