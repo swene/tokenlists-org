@@ -25,12 +25,12 @@ const Nav = styled.nav`
 export default function Footer() {
   return (
     <StyledFooter>
-      <span>A Uniswap Project</span>
+      <span>Maintained by Swene</span>
       <Nav>
-        <a href="https://uniswap.org/docs/v2/">Docs</a>
-        <a href="https://github.com/uniswap">GitHub</a>
-        <a href="https://discord.gg/XErMcTq">Discord</a>
-        <a href="https://app.uniswap.org">App</a>
+        <a href="https://swene.io/docs/">Docs</a>
+        <a href="https://github.com/swene">GitHub</a>
+        <a href="https://t.me/sweneapp">Telegram</a>
+        <a href="https://swene.app">App</a>
       </Nav>
     </StyledFooter>
   )
