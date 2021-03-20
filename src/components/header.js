@@ -70,9 +70,6 @@ export default function Header({ back }) {
       </Link>
 
       <Nav>
-        <a target="_blank" rel="noopener noreferrer" className="hide-small" href="http://community.tokenlists.org/">
-          Community
-        </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -85,7 +82,7 @@ export default function Header({ back }) {
           className="hide-small"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/Uniswap/token-lists#authoring-token-lists"
+          href="https://github.com/swene/token-lists#authoring-token-lists"
         >
           Make a list
         </a>
@@ -94,7 +91,7 @@ export default function Header({ back }) {
           className="button"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/Uniswap/token-lists"
+          href="https://github.com/swene/token-lists"
         >
           <img
             style={{
