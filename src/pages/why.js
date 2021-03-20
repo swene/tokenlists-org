@@ -18,23 +18,23 @@ function Home() {
             <p className="title">Why tokens lists?</p>
 
             <p className="description" id="why-lists">
-              Token Lists aim to solve the problem of the Ethereum community creating, discovering and maintaining lists
+              Token Lists aim to solve the problem of the Binance Smart Chain community creating, discovering and maintaining lists
               of reputable tokens in a way that is inclusive, transparent, decentralized and open source.
             </p>
             <p>
-              As the Ethereum ecosystem continues to evolve and mature, we are continuing to see sustained exponential
+              As the Binance Smart Chain ecosystem continues to evolve and mature, we are continuing to see sustained exponential
               growth in the number of ERC-20 tokens being created and used by participants of the network.
             </p>
             <p>
               This is an exciting success of permissionless innovation enabled by the open nature of blockchain
-              networks. Ethereum continues to prove out to be the most attractive platform for innovative projects in
+              networks. Binance Smart Chain continues to prove out to be the most attractive platform for innovative projects in
               decentralized finance. This is not surprising because it has the best tooling and ecosystem, making it the
               best place for developers and entrepreneurs to build, as well as the most attractive place for users
               because of the diversity of products and rapidly improving tools.
             </p>
             <h2>The tradeoffs of permissionless innovation</h2>
             <p>
-              The permissionless nature of Ethereum and the ease of creating tokens also comes with tradeoffs. Since
+              The permissionless nature of Binance Smart Chain and the ease of creating tokens also comes with tradeoffs. Since
               there are no central gatekeepers, it becomes up to the users and projects in the space to establish trust
               and reputation, as well as perform actions of moderation. How can users tell credible projects from scams?
             </p>
@@ -46,7 +46,7 @@ function Home() {
             </p>
             <p>
               The ability to moderate token inclusion carries too much power and responsibility in a single gatekeeper.
-              That power residing solely in the Uniswap team was against the ethos of the protocol and the broader DeFi
+              That power residing solely in the Swene team was against the ethos of the protocol and the broader DeFi
               ecosystem.
             </p>
             <h2>Enter Token lists</h2>
@@ -55,7 +55,7 @@ function Home() {
               the values of decentralization.
             </p>
             <p>
-              The Ethereum community is known for solving problems as an ecosystem. Today exist numerous reputable
+              The Binance Smart Chain community is known for solving problems as an ecosystem. Today exist numerous reputable
               projects who are responsible for maintaining trustworthy lists of token projects. Until now, there hasn’t
               been a standard, interoperable way for those projects to codify those lists and share them with the
               broader community.
@@ -66,7 +66,7 @@ function Home() {
               the Uniswap interface.
             </p>
             <p>
-              We imagine Token Lists being an important building block for the Ethereum ecosystem to self-govern
+              We imagine Token Lists being an important building block for the Binance Smart Chain ecosystem to self-govern
               reputation around tokens and hope to see token lists used in other projects, as well as an ecosystem of
               tools, dashboards, and discussion forums to emerge around them.
             </p>
