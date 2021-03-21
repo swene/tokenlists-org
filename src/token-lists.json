@@ -1,10 +1,22 @@
 {
+  "https://raw.githubusercontent.com/ApeSwapFinance/apeswap-dex/main/src/constants/token/apeswap.json": {
+    "name": "ApeSwap",
+    "homepage": ""
+  },
   "https://tokens.bscswap.com/tokens.json": {
     "name": "BSCSwap",
     "homepage": ""
   },
+  "https://raw.githubusercontent.com/JustLiquidity/DEFAULT-TOKEN-LIST/main/src/tokens/mainnet.json": {
+    "name": "JulSwap",
+    "homepage": ""
+  },
   "https://gateway.pinata.cloud/ipfs/QmdKy1K5TMzSHncLzUXUJdvKi1tHRmJocDRfmCXxW5mshS": {
     "name": "PancakeSwap",
+    "homepage": ""
+  },
+  "https://raw.githubusercontent.com/thugs-defi/swap-token-list/master/tokens.json": {
+    "name": "StreetSwap",
     "homepage": ""
   },
   "https://tokens.swene.app": {
@@ -13,6 +25,10 @@
   },
   "https://tokens.swipe.org": {
     "name": "SwipeSwap",
+    "homepage": ""
+  },
+  "https://tokens.venus.io": {
+    "name": "Venus",
     "homepage": ""
   }
 }
