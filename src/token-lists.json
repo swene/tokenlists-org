@@ -2,11 +2,11 @@
   "https://tokens.bscswap.com/tokens.json": {
     "name": "BSCSwap",
     "homepage": ""
-  }
+  },
   "https://gateway.pinata.cloud/ipfs/QmdKy1K5TMzSHncLzUXUJdvKi1tHRmJocDRfmCXxW5mshS": {
     "name": "PancakeSwap",
     "homepage": ""
-  }
+  },
   "https://tokens.swene.app": {
     "name": "Swene",
     "homepage": ""
