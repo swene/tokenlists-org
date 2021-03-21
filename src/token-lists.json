@@ -7,7 +7,7 @@
     "name": "Swene",
     "homepage": ""
   },
-  "https://tokens.swipe.org" {
+  "https://tokens.swipe.org": {
     "name": "SwipeSwap",
     "homepage": ""
   }
