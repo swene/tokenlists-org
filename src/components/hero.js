@@ -70,8 +70,7 @@ export default function Header() {
   return (
     <Hero>
       <span style={{ marginBottom: '1rem' }}>
-        A{' '}
-        Maintained by 
+        Maintained by {' '}
         <a href="https://swene.io/" className="swene">
           Swene
         </a>{' '}
