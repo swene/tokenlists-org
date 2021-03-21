@@ -40,7 +40,7 @@ const Hero = styled.section`
     font-family: 'MatterSQ-SemiBold';
   }
 
-  .uniswap {
+  .swene {
     color: #ff007a;
     font-family: 'MatterSQ-Regular';
   }
