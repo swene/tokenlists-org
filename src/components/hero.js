@@ -40,7 +40,7 @@ const Hero = styled.section`
     font-family: 'MatterSQ-SemiBold';
   }
 
-  .uniswap {
+  .swene {
     color: #ff007a;
     font-family: 'MatterSQ-Regular';
   }
@@ -70,11 +70,10 @@ export default function Header() {
   return (
     <Hero>
       <span style={{ marginBottom: '1rem' }}>
-        A{' '}
+        Maintained by {' '}
         <a href="https://swene.io/" className="swene">
           Swene
         </a>{' '}
-        Project
       </span>
 
       <p className="title">A Binance Smart Chain token list standard.</p>
