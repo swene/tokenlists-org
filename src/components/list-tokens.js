@@ -65,6 +65,12 @@ const TokenTag = styled.div`
   width: fit-content;
 `
 
+const TokenChainLogo = styled.img`
+  width:10px;
+  height:15px;
+`
+
+
 const TokenAddress = styled.span`
   display: grid;
   grid-template-columns: auto 16px;
@@ -74,6 +80,15 @@ const TokenAddress = styled.span`
 `
 
 export const ListItem = memo(function ListItem({ token }) {
+  const logoArr = {
+    '1':"https://cryptologos.cc/logos/ethereum-eth-logo.png",
+    '56':"https://cryptologos.cc/logos/binance-coin-bnb-logo.png",
+    '100':"https://cryptologos.cc/logos/multi-collateral-dai-dai-logo.png",
+    '137':"https://cryptologos.cc/logos/polygon-matic-logo.png"
+  };
+
+  const logoUrl = logoArr[token.chainId.toString()]
+
   return (
     <TokenItem>
       <TokenInfo>
@@ -101,6 +116,7 @@ export const ListItem = memo(function ListItem({ token }) {
           </a>
         </span>
       </TokenInfo>
+      <TokenChainLogo src={logoUrl}></TokenChainLogo>
       <span>{token.symbol}</span>
       <TokenTagWrapper className="hide-small">
         {token?.tags?.length > 0 && (
@@ -182,6 +198,7 @@ export default function Tokens({ tokens }) {
       <TokenWrapper>
         <ListTitle>
           <p className="hide-small">Name</p>
+          <p className="hide-small">Chain</p>
           <p className="hide-small">Symbol</p>
           <p className="hide-small">Tags</p>
 
@@ -194,7 +211,7 @@ export default function Tokens({ tokens }) {
           value={value}
           data={tokens}
           renderResults={(results) =>
-            results.length === 0 ? 'None found!' : results.map((data, i) => <ListItem key={i} token={data} />)
+            results.length === 0 ? 'None found!' : results.map((data, i) => <ListItem key={i} token={data} chain={data.chaiId} />)
           }
         />
       </TokenWrapper>

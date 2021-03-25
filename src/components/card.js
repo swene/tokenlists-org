@@ -55,6 +55,15 @@ const NameText = styled.h3`
   word-wrap: break-word;
 `
 
+const ChainLogo = styled.img`
+  width:10px;
+  height:30px;
+`
+
+const LogosDiv = styled.div`
+  display:flex;
+`
+
 function getLogoURL(logoURI) {
   if (logoURI?.startsWith('ipfs://')) {
     return `https://ipfs.io/ipfs/${logoURI.split('//')[1]}`
@@ -65,9 +74,22 @@ function getLogoURL(logoURI) {
   }
 }
 
-export default function Card({ id, list, name }) {
+export default function Card({ id, list, name , chains }) {
   const actualName = list?.name ?? name // use the name from the list, falling back to the optional prop if necessary
   const logoURL = getLogoURL(list?.logoURI ?? null)
+
+  const logoArr = {
+    '1':"https://cryptologos.cc/logos/ethereum-eth-logo.png",
+    '56':"https://cryptologos.cc/logos/binance-coin-bnb-logo.png",
+    '100':"https://cryptologos.cc/logos/multi-collateral-dai-dai-logo.png",
+    '137':"https://cryptologos.cc/logos/polygon-matic-logo.png"
+  };
+
+  var srcArr= [];
+
+  for ( var it in chains) {
+    srcArr.push(logoArr[chains[it].toString()]);
+  }
 
   return (
     <StyledCard to={`/token-list?url=${id}`} className="card">
@@ -81,6 +103,11 @@ export default function Card({ id, list, name }) {
       />
       <section>
         <NameText>{actualName}</NameText>
+        <LogosDiv >
+         {srcArr.map((item,index)=>{
+             return <ChainLogo key={index} src={item}></ChainLogo>
+         })}
+        </LogosDiv>
         <TokensListed>
           {list?.tokens?.length > 0 ? `${list.tokens.length} tokens` : list === null ? 'Error' : 'Loading...'}
         </TokensListed>

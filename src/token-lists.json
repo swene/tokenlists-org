@@ -1,22 +1,44 @@
 {
   "https://tokens.bscswap.com/tokens.json": {
     "name": "BSCSwap",
-    "homepage": ""
+    "homepage": "",
+    "chains":[56],
+    "tags":["binance","smart","smart chain","bsc"]
   },
   "https://gateway.pinata.cloud/ipfs/QmdKy1K5TMzSHncLzUXUJdvKi1tHRmJocDRfmCXxW5mshS": {
     "name": "PancakeSwap",
-    "homepage": ""
+    "homepage": "",
+    "chains":[56],
+    "tags":["binance","smart","smart chain","bsc"]
+  },
+  "https://tokens.swene.app/": {
+    "name": "Swene",
+    "homepage": "https://swene.io",
+    "chains":[1,56,100,137],
+    "tags":["binance","smart","smart chain","bsc","matic","polygon","xdai","dai","eth","ethereum","crosschain","cross"]
+  },
+  "https://tokens.swene.app/eth": {
+    "name": "Swene",
+    "homepage": "https://swene.io",
+    "chains":[1],
+    "tags":["eth","ethereum"]
   },
   "https://tokens.swene.app/bsc": {
     "name": "Swene",
-    "homepage": "https://swene.io"
+    "homepage": "https://swene.io",
+    "chains":[56],
+    "tags":["binance","smart","smart chain","bsc"]
   },
   "https://tokens.swipe.org": {
     "name": "SwipeSwap",
-    "homepage": ""
+    "homepage": "",
+    "chains":[56],
+    "tags":["binance","smart","smart chain","bsc"]
   },
   "https://tokens.venus.io": {
     "name": "Venus",
-    "homepage": ""
+    "homepage": "",
+    "chains":[56],
+    "tags":["binance","smart","smart chain","bsc"]
   }
 }

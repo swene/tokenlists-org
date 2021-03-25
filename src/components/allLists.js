@@ -74,48 +74,26 @@ export default function AllLists() {
   }
 
   // fetch lists
-  const lists = useMultiFetch(listIDs)
+  var lists = useMultiFetch(listIDs)
 
   // format list data for search, using names from fetched lists if available, while falling back to hard-coded names
   const data = useMemo(
-    () => listIDs.map((listID) => ({ id: listID, name: lists[listID].list?.name ?? tokenLists[listID].name })),
+    () => listIDs.map((listID) => (
+      {
+        id: listID,
+        name: lists[listID].list?.name ?? tokenLists[listID].name ,
+        chains: tokenLists[listID].chains,
+        tags: tokenLists[listID].tags,
+      })),
     [lists]
   )
 
-  // // the below is a naive way to get all tokens in all lists, unique by address
-  // const allTokensByListID = useMemo(
-  //   () =>
-  //     Object.keys(lists).map((listID) => {
-  //       const list = lists[listID]?.list
-  //       const tokensInList = (list?.tokens ?? []).reduce(
-  //         (accumulator, token) => ({ ...accumulator, [toChecksumAddress(token.address)]: token }),
-  //         {}
-  //       )
-  //       return tokensInList
-  //     }),
-  //   [lists]
-  // )
-  // const allTokens = useMemo(
-  //   () =>
-  //     Object.keys(allTokensByListID).reduce(
-  //       (accumulator, listID) => ({ ...accumulator, ...allTokensByListID[listID] }),
-  //       {}
-  //     ),
-  //   [allTokensByListID]
-  // )
-  // const tokenData = useMemo(
-  //   () =>
-  //     Object.keys(allTokens).map((tokenAddress) => ({
-  //       address: tokenAddress,
-  //       name: allTokens[tokenAddress]?.name ?? '',
-  //       symbol: allTokens[tokenAddress]?.symbol ?? '',
-  //     })),
-  //   [allTokens]
-  // )
-
   return (
     <StyledAllLists>
+    <div>
+      <div>Search through our lists by name, platform or chainID</div>
       <Search handleChange={handleChange} value={value} setValue={setValue} />
+    </div>
 
       {/* <h1>Lists</h1> */}
 
@@ -127,7 +105,7 @@ export default function AllLists() {
             results.length === 0
               ? 'None found!'
               : results.map((result) => (
-                  <Card key={result.id} id={result.id} list={lists[result.id]?.list} name={result.name} />
+                  <Card key={result.id} id={result.id} list={lists[result.id]?.list} name={result.name} chains={result.chains} />
                 ))
           }
         />
