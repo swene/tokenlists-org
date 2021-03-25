@@ -29,6 +29,18 @@
     "chains":[56],
     "tags":["binance","smart","smart chain","bsc"]
   },
+  "https://tokens.swene.app/xdai": {
+    "name": "Swene",
+    "homepage": "https://swene.io",
+    "chains":[100],
+    "tags":["xdai","dai"]
+  },
+  "https://tokens.swene.app/matic": {
+    "name": "Swene",
+    "homepage": "https://swene.io",
+    "chains":[137],
+    "tags":["polygon","matic"]
+  },
   "https://tokens.swipe.org": {
     "name": "SwipeSwap",
     "homepage": "",
